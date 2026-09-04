@@ -46,18 +46,17 @@ fetch(url)
     // })
 
     // Arrow function
-    .then((response) => response.json())
-    .then((jsonBody) => jsonBody.results)
+    // .then((response) => response.json())
+    // .then((jsonBody) => jsonBody.results)
+    pokeApi.getPokemons()
     .then((pokedex) => {
-
+        const listItems = []
         for (let i = 0; i < pokedex.length; i++) {
             const pokemon = pokedex[i];
-            pokemonList.innerHTML += convertPokemonToLi(pokemon)
+            listItems.push(convertPokemonToLi(pokemon))
         }
+
+        console.log(listItems)
     })
     .catch((error) => console.error(error))
     .finally(() => console.log('Requisição concluída!'))
-
-
-// const x = 10 + 10
-// console.log(x)
