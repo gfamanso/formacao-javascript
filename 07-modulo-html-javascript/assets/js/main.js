@@ -1,7 +1,3 @@
-const offset = 0
-const limit = 10
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
-
 function convertPokemonToLi(pokemon) {
     return `
     
@@ -24,7 +20,6 @@ function convertPokemonToLi(pokemon) {
 const pokemonList = document.getElementById('pokemonList')
 // pokemonList.innerHTML += '<li>Teste</li>'
 
-fetch(url)
     // .then(function (response) {
     //     // console.log(response)
     //     response
@@ -48,15 +43,14 @@ fetch(url)
     // Arrow function
     // .then((response) => response.json())
     // .then((jsonBody) => jsonBody.results)
-    pokeApi.getPokemons()
-    .then((pokedex) => {
-        const listItems = []
-        for (let i = 0; i < pokedex.length; i++) {
-            const pokemon = pokedex[i];
-            listItems.push(convertPokemonToLi(pokemon))
-        }
+pokeApi.getPokemons().then((pokedex = []) => {
+    pokemonList.innerHTML += pokedex.map(convertPokemonToLi).join('')
 
-        console.log(listItems)
+        // const pokemonList = []
+        // for (let i = 0; i < pokedex.length; i++) {
+        //     const pokemon = pokedex[i];
+        //     pokemonList.push(convertPokemonToLi(pokemon))
+        // }
+
+        // console.log(pokemonList)
     })
-    .catch((error) => console.error(error))
-    .finally(() => console.log('Requisição concluída!'))
