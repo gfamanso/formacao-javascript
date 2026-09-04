@@ -1,17 +1,16 @@
 function convertPokemonToLi(pokemon) {
     return `
     
-        <li class="pokemon">
-            <span class="number">#001</span>
+        <li class="pokemon ${pokemon.type}">
+            <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
             <div class="detail">
                 <ol class="types">
-                    <li class="type">Grass</li>
-                    <li class="type">Poison</li>
+                    ${pokemon.types.map((type) => `<li class="type">${type}</li>`).join('')}
                 </ol>
 
-            <img src="./assets/images/001Bulbasaur.png" alt="${pokemon.name}">
+            <img src="${pokemon.image}" alt="${pokemon.name}">
             </div>
         </li >
     `
@@ -44,7 +43,10 @@ const pokemonList = document.getElementById('pokemonList')
     // .then((response) => response.json())
     // .then((jsonBody) => jsonBody.results)
 pokeApi.getPokemons().then((pokedex = []) => {
-    pokemonList.innerHTML += pokedex.map(convertPokemonToLi).join('')
+    const newHtml = pokedex.map(convertPokemonToLi).join('')
+    pokemonList.innerHTML = newHtml
+
+    // pokemonList.innerHTML += pokedex.map(convertPokemonToLi).join('')
 
         // const pokemonList = []
         // for (let i = 0; i < pokedex.length; i++) {
