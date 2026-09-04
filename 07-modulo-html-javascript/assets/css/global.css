@@ -13,11 +13,11 @@
   height: 100vh;
   width: 100vw;
   padding: 1rem;
-  background-color: #fff;
+  background-color: #aaa8a8;
  
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 375px) {
   .content {
     max-width: 992px;
     height: auto;
