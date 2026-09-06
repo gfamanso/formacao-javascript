@@ -1,0 +1,22 @@
+.content-details {
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid black;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    
+}
+
+header {
+    background-color: lightgreen;
+    border: 1px solid black;
+    
+}
+
+main {
+    background-color: lightyellow;
+    border: 1px solid black;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
