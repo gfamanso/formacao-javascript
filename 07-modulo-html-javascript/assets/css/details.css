@@ -1,4 +1,29 @@
-.content-details {
+body {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+h1 {
+    margin: 10px;
+    padding: 10px
+    
+}
+
+header {
+    height: 200px;
+    width: 100px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin: 30px;
+}
+
+main {
+    height: 300px;
+    width: 100px;
+    border: 1px solid red;    
+    margin: 30px;
+}
+/* .content-details {
     background-color: lightgray;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -19,4 +44,4 @@ main {
     background-color: lightyellow;
     border: 1px solid black;
     border-radius: 1rem 1rem 1rem 1rem;
-}
+} */
