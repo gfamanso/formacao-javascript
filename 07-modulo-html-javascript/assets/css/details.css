@@ -9,20 +9,90 @@ h1 {
     
 }
 
+.container {
+    border: 2px solid blue;
+    width: 80%;
+    margin: 0 auto;
+}
+
 header {
-    height: 200px;
-    width: 100px;
     border: 1px solid white;
     box-sizing: border-box;
     margin: 30px;
+    position: relative;
+    /* min-height: 350px */
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.informacoes-do-pokemon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.informacoes-do-pokemon img {
+    max-width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.numero-pokemon {
+    justify-self: right;
+    grid-column: 3;
+}
+
+
+
+.abas {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.abas li {
+    flex: 1;
+}
+
+.abas button {
+    width: 100%;
 }
 
 main {
-    height: 300px;
-    width: 100px;
-    border: 1px solid red;    
-    margin: 30px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
+
+.informacoes-gerais dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin: 0;
+    padding: 10px;
+}
+
+.breeding dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin: 0;
+}
+
 /* .content-details {
     background-color: lightgray;
     display: grid;
