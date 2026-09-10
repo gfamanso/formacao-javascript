@@ -1,24 +1,19 @@
 body {
-    background-color: lightblue;
     border: 1px solid black;
 }
 
-h1 {
-    margin: 10px;
-    padding: 10px
-    
-}
-
 .container {
-    border: 2px solid blue;
     width: 80%;
     margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 header {
-    border: 1px solid white;
+    background-color: #49d0b0;
     box-sizing: border-box;
-    margin: 30px;
+    margin: 0px;
+    padding: 20px;
     position: relative;
     /* min-height: 350px */
 }
@@ -47,11 +42,39 @@ header {
 }
 
 .numero-pokemon {
-    justify-self: right;
-    grid-column: 3;
+    /* justify-self: right;
+    grid-column: 3; */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    justify-self: end;
 }
 
+.dados-pokemon h1,
+.numero-pokemon {
+    color: white;
+}
 
+.dados-pokemon h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.dados-pokemon ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dados-pokemon li {
+    background-color: #49d0b0;
+    filter: brightness(1.1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+}
 
 .abas {
     display: flex;
@@ -68,6 +91,18 @@ header {
 
 .abas button {
     width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: #666;
+    font-weight: bold;
+}
+
+.aba-ativa {
+    border-bottom: 2px solid black !important;
 }
 
 main {
@@ -91,6 +126,21 @@ main {
     grid-template-columns: 1fr 2fr;
     gap: 10px;
     margin: 0;
+    padding: 10px;
+}
+
+.informacoes-gerais dt,
+.breeding dt {
+    font-weight: normal;
+}
+
+.informacoes-gerais dd,
+.breeding dd {
+    margin: 0;
+}
+
+.breeding h2 {
+    margin: 0 0 15px;
 }
 
 /* .content-details {
