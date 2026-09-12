@@ -41,35 +41,76 @@
         <main>
             <nav class="navegacao">
                 <ul class="abas">
-                    <li><button class="aba-ativa">About</button></li>
-                    <li><button>Base Stats</button></li>
-                    <li><button>Evolution</button></li>
-                    <li><button>Moves</button></li>
+                    <li><button class="aba aba-ativa">About</button></li>
+                    <li><button class="aba">Base Stats</button></li>
+                    <li><button class="aba">Evolution</button></li>
+                    <li><button class="aba">Moves</button></li>
                 </ul>
             </nav>
-            <div class="informacoes-gerais">
+            <div class="conteudo-aba" id="about">
+                <div class="informacoes-gerais">
+                    <dl>
+                        <dt>Species</dt>
+                        <dd>Seed</dd>
+                        <dt>Height</dt>
+                        <dd>2'3"</dd>
+                        <dt>Weight</dt>
+                        <dd>15.2 lbs</dd>
+                        <dt>Abilities</dt>
+                        <dd>Overgrow, Chlorophyll</dd>
+                    </dl>
+                </div>
+                <section class="breeding">
+                    <h2 >Breeding</h2>
+                        <dl>
+                            <dt>Gender</dt>
+                            <dd>♂ 87.5%   ♀ 12.5%</dd>
+
+                            <dt>Egg Group</dt>
+                            <dd>Monster</dd>
+
+                            <dt>Egg Cycle</dt>
+                            <dd>Grass</dd>                    
+                        </dl>
+                </section> 
+            </div>
+            <div class="conteudo-aba" id="base-stats">
                 <dl>
-                    <dt>Species</dt>
-                    <dd>Seed</dd>
-                    <dt>Height</dt>
-                    <dd>2'3"</dd>
-                    <dt>Weight</dt>
-                    <dd>15.2 lbs</dd>
-                    <dt>Abilities</dt>
-                    <dd>Overgrow, Chlorophyll</dd>
+                    <dt>HP</dt>
+                    <dd>45</dd>
+
+                    <dt>Attack</dt>
+                    <dd>49</dd>
+
+                    <dt>Defense</dt>
+                    <dd>49</dd>
+
+                    <dt>Sp. Atk</dt>
+                    <dd>65</dd>
+
+                    <dt>Sp. Def</dt>
+                    <dd>65</dd>
+
+                    <dt>Speed</dt>
+                    <dd>45</dd>
                 </dl>
             </div>
-            <section class="breeding">
-                <h2 >Breeding</h2>
-                    <dl>
-                        <dt>Gender</dt>
-                        <dd>♂ 87.5%   ♀ 12.5%</dd>
-                        <dt>Egg Group</dt>
-                        <dd>Monster</dd>
-                        <dt>Egg Cycle</dt>
-                        <dd>Grass</dd>                    
-                    </dl>
-            </section>   
+            <div class="conteudo-aba" id="evolution">
+                <h2>Evolution</h2>
+
+                <p>Bulbasaur → Ivysaur → Venusaur</p>
+            </div>
+            <div class="conteudo-aba" id="moves">
+                <h2>Moves</h2>
+
+                <ul>
+                    <li>Tackle</li>
+                    <li>Growl</li>
+                    <li>Vine Whip</li>
+                    <li>Poison Powder</li>
+                </ul>
+            </div>
+              
         </main>
     </div>
 </body>

@@ -1,5 +1,6 @@
 body {
     border: 1px solid black;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -10,11 +11,15 @@ body {
     overflow: hidden;    
 }
 
+.navegacao {
+    padding-top: 30px;
+}
+
 header {
     background-color: #49d0b0;
     box-sizing: border-box;
     margin: 0px;
-    padding: 20px;
+    padding: 20px 24px;
     position: relative;
     /* min-height: 350px */
 }
@@ -55,8 +60,7 @@ header {
 }
 
 .numero-pokemon {
-    /* justify-self: right;
-    grid-column: 3; */
+    grid-column: 3;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -123,15 +127,16 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    
 }
 
-.informacoes-gerais dl {
+.informacoes-gerais dl,
+#base-stats dl {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 10px;
     margin: 0;
-    padding: 10px;
 }
 
 .breeding dl {
@@ -139,16 +144,17 @@ main {
     grid-template-columns: 1fr 2fr;
     gap: 10px;
     margin: 0;
-    padding: 10px;
 }
 
 .informacoes-gerais dt,
-.breeding dt {
+.breeding dt,
+#base-stats dt {
     color: #777;
 }
 
 .informacoes-gerais dd,
-.breeding dd {
+.breeding dd,
+#base-stats dd {
     margin: 0;
     color: #333;
 }
