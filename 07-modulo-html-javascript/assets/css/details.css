@@ -122,6 +122,14 @@ header {
     border-bottom: 2px solid black !important;
 }
 
+.conteudo-aba {
+    display: none;
+}
+
+.conteudo-aba.ativo {
+    display: block;
+}
+
 main {
     background-color: white;
     padding: 20px;
