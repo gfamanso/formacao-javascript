@@ -147,6 +147,30 @@ main {
     margin: 0;
 }
 
+.barra {
+    flex: 1;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.preenchimento {
+    width: 60%;
+    height: 100%;
+    background-color: #78C850;
+    border-radius: 10px;
+}
+
+#base-stats dd {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breeding h2 {
+    margin: 0 0 15px;
+}
+
 .breeding dl {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -167,9 +191,7 @@ main {
     color: #333;
 }
 
-.breeding h2 {
-    margin: 0 0 15px;
-}
+
 
 /* .content-details {
     background-color: lightgray;
